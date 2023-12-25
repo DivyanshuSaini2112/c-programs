@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int i, j, k, a;
+    printf("Enter the side length of the triangle: ");
+    scanf("%d", &a);
+
+    // Print a hollow right-angled triangle pattern with a border
+    for (i = 1; i <= a; i++) { // Rows
+        for (j = 1; j <= a - i; j++) // Right-align with spaces
+            printf(" ");
+
+        for (k = 1; k <= 2 * i - 1; k++) { // Columns
+            if (i == 1 || i == a || k == 1 || k == 2 * i - 1) {
+                printf("*"); // Print asterisk for the border
+            } else {
+                printf(" "); // Print space for the inside
+            }
+        }
+
+        printf("\n"); // Move to the next line
+    }
+}
+
