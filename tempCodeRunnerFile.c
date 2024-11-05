@@ -1,1 +1,2 @@
- i
+ rn;
+	char name[10];

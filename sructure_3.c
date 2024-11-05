@@ -2,17 +2,18 @@
 
 struct entries
 {
-	int ph,rollno;
-	char name[50],addres[50];
-	float income;
-}e1;
+    int ph, rollno;
+    char name[50], address[50];
+    float income;
+} e1;
 
 int main()
 {
-	
-	printf("enter the details as asked:-\nenter your name :\naddres :\nphone no. :\nincome :\n");
-	scanf("%c%c%d%d",&e1.name,&e1.addres,&e1.ph,&e1.income);
-	
-	printf("your details are:-\nname : %c\nphone no. : %d\naddres : %c\nincome : %f",e1.name,e1.ph,e1.addres,e1.income);
-	
+    printf("Enter the details as asked:\nEnter your name:\nAddress:\nPhone no.:\nIncome:\n");
+    scanf("%s %s %d %f", e1.name, e1.address, &e1.ph, &e1.income);
+
+    printf("\nYour details are:\nName: %s\nPhone no.: %d\nAddress: %s\nIncome: %f\n", e1.name, e1.ph, e1.address, e1.income);
+
+    return 0;
 }
+

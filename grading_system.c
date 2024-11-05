@@ -10,14 +10,14 @@ int main() {
     float avg = Quiz(); // Calculate average quiz score
 
     QF = 3 * avg; // Calculate quiz final percentage
-    printf("the final percentage of all the quiz is %.2f%%\n", QF);
+    printf("The final percentage of all the quiz is %.2f%%\n", QF);
 
     float mavg = Midterm(); // Calculate average midterm score
 
     int final;
     float MF, FF;
 
-    printf("enter your final marks:\n");
+    printf("Enter your final exam marks (out of 100):\n");
     scanf("%d", &final); // Input final exam marks
 
     // Calculate weighted midterm and final marks based on the comparison
@@ -30,17 +30,17 @@ int main() {
     }
 
     float total = QF + MF + FF; // Calculate total course grade
-    printf("the total course grade is %.2f%%\n", total);
+    printf("The total course grade is %.2f%%\n", total);
 
     char grade = alphabetgrade(total); // Determine letter grade
-    printf("your grade is %c", grade);
+    printf("Your grade is %c\n", grade);
 }
 
 // Function to calculate average quiz score
 float Quiz() {
     int qmark[6], i, sum = 0;
 
-    printf("enter your marks for all 6 Quizzes:\n");
+    printf("Enter your marks for all 6 Quizzes (out of 10):\n");
 
     // Input marks for quizzes
     for (i = 0; i <= 5; i++) {
@@ -75,7 +75,7 @@ float Quiz() {
 float Midterm() {
     int mmark[3], i, sum = 0;
 
-    printf("enter your marks for all three Midterm exams:\n");
+    printf("Enter your marks for all three Midterm exams (out of 100):\n");
 
     // Input marks for midterms
     for (i = 0; i <= 2; i++) {
