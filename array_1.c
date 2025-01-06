@@ -15,7 +15,7 @@ int main()
 	
 	for(i=0;i<=9;i++)
 	{
-		printf(" %d ",array[i]);
+		printf(" %d ",array[i+1]);
 	}
 	
 }
